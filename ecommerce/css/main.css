@@ -228,4 +228,42 @@ nav .nav-login {
     
     transform: scale(1.03);
 }
+
+#new-arrivals .col-lg-4 .card .card-body {
+
+    margin-top: 10px;
+}
+#new-arrivals .col-lg-4 .card .card-body a {
+
+    text-decoration: none;
+    color: #444;
+}
+
+#new-arrivals .col-lg-4 .card .card-body h6 {
+
+    font-size: 28px !important;
+    font-weight: bold !important;
+
+}
+#new-arrivals .col-lg-4 .card .card-body h4 {
+
+    margin-top: 10px;
+    color: red; 
+    font-size: 22px;
+}
+
+#new-arrivals #arrivals-second .gallery-image {
+
+    height: 690px;
+    background-image: url("../images/gallery1.jpg");
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+#new-arrivals #arrivals-second #second-gallery-item {
+
+    background-image: url("../images/gallery2.jpg");
+}
 /* New arrivals section ends */
