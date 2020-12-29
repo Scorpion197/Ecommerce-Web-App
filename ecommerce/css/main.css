@@ -9,9 +9,7 @@ body {
     transition: all 2s ease-in-out;
 }
 
-#overlay {
-    transition: all 1s ease-in-out;
-}
+
 /* Navigation bar styling starts */ 
 
 nav .collapse ul {
@@ -38,52 +36,6 @@ nav .nav-login {
     cursor: pointer;
 }
 
-nav #search-keywords {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    width: 100%;
-    background: #fff;
-    display: none;
-    margin-top: -8%;
-
-}
-nav #search-field {
-    border: none; 
-    outline: none;
-    transition: all 2s ease-in-out ;
-    border-bottom: 3px solid red; 
-    height: 40px; 
-    width: 400px;
-    margin: auto;
-    padding: 10px;
-    background: transparent;
-    font-size: 30px;
-    margin-top: 90px;
-    color: rgb(7, 2, 80);
-
-}
-
-nav .displayed {
-
-    display: none;
-}
-
-#close-search-input {
-
-    color: rgb(150, 148, 148);
-    position: relative;
-    top: -65%;
-    left: 48%;
-    transition: all 2s ease-in-out;
-    cursor: pointer;
-}
-
-nav .close-search {
-    display: none;
-}
 
 @media (max-width: 576px )  {
 
@@ -238,3 +190,42 @@ nav .close-search {
 }
 
 /* Welcome menu section ends */
+
+
+
+
+
+/* New arrivals section starts */
+
+#new-arrivals {
+
+    margin-top: 120px;
+    padding-top: 40px;
+}
+
+#new-arrivals h2 {
+    
+    margin-bottom: 60px;
+    margin-left: 400px;
+    font-size: 50px; 
+    font-weight: bold;
+    color: #0a0a20;
+}
+
+#new-arrivals .col-lg-4 .card {
+
+    border: none; 
+    outline: none;
+}
+
+#new-arrivals .col-lg-4 .card img {
+
+    transition: all 1s ease-in-out;
+    max-width: 100%;
+}
+
+#new-arrivals .col-lg-4 .card img:hover {
+    
+    transform: scale(1.03);
+}
+/* New arrivals section ends */
