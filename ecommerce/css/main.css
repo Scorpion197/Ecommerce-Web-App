@@ -1,0 +1,240 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 2s ease-in-out;
+}
+
+#overlay {
+    transition: all 1s ease-in-out;
+}
+/* Navigation bar styling starts */ 
+
+nav .collapse ul {
+    margin-top: 30px;
+}
+
+nav .collapse ul .nav-link {
+    font-size: 18px !important; 
+    font-weight: 800 !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav .nav-search {
+    color: #000;
+    margin-right: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+nav .nav-login {
+    color: #000; 
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+nav #search-keywords {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background: #fff;
+    display: none;
+    margin-top: -8%;
+
+}
+nav #search-field {
+    border: none; 
+    outline: none;
+    transition: all 2s ease-in-out ;
+    border-bottom: 3px solid red; 
+    height: 40px; 
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    background: transparent;
+    font-size: 30px;
+    margin-top: 90px;
+    color: rgb(7, 2, 80);
+
+}
+
+nav .displayed {
+
+    display: none;
+}
+
+#close-search-input {
+
+    color: rgb(150, 148, 148);
+    position: relative;
+    top: -65%;
+    left: 48%;
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+}
+
+nav .close-search {
+    display: none;
+}
+
+@media (max-width: 576px )  {
+
+    nav .nav-bar-icons {
+        
+        order: 2 !important;
+    }
+    
+}
+
+/* Navigation bar styling ends */ 
+
+
+
+/* Welcome menu section starts */
+
+#welcome-menu {
+
+    margin-top: 40px;
+    background-color:#f8f9fa;
+}
+
+#welcome-menu #image-col img {
+    margin-left: 80px;
+    transition: all 1s ease-in-out;
+    max-width: 100%;
+}
+
+#welcome-menu #text-col {
+
+    margin-top: -20px;
+}
+#welcome-menu #image-col img:hover {
+    transform: scale(1.03);
+}
+#welcome-menu #text-col h1 {
+    font-size: 95px;
+    font-weight: 800;
+    margin-top: 50%;
+    margin-left: -20%;
+    color: rgb(9, 3, 59);
+    transition: all 2s ease-in-out;
+}
+
+#welcome-menu #text-col p {
+    color: rgb(9, 3, 59);
+    margin-left: -18%;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+#welcome-menu #text-col button {
+
+    margin-left: -18%;
+    margin-top: 30px;
+    border: none; 
+    outline: none; 
+    background: #4a4a4b; 
+    padding: 15px 29px;
+    width: 180px;
+    text-transform: uppercase;
+    font-size: 18px; 
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+
+}
+
+#welcome-menu #text-col button:hover {
+    background: red;
+}
+@media (max-width: 576px) {
+
+    #welcome-menu #image-col img {
+        display: none;
+    }
+
+    #welcome-menu #text-col h1 {
+        font-size: 40px;
+        margin-top: 20%;
+    }
+
+    #welcome-menu #text-col button {
+
+        padding: 10px 10px; 
+        width: 150px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    
+    #welcome-menu #text-col p {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #welcome-menu #image-col img {
+        display: none;
+    }
+
+    #welcome-menu #text-col h1 {
+
+        font-size: 45px; 
+        margin-left: 5px; 
+        margin-top: 20%;
+    }
+    
+    #welcome-menu #text-col p {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+
+    #welcome-menu #text-col button {
+
+        padding: 10px 10px; 
+        width: 150px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 992px) {
+    #welcome-menu #image-col img {
+        
+        display: none;
+    }
+
+    #welcome-menu #text-col h1 {
+
+        font-size: 45px; 
+        margin-left: 5px; 
+        margin-top: 20%;
+    }
+    
+    #welcome-menu #text-col p {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+    #welcome-menu #text-col button {
+
+        padding: 10px 10px; 
+        width: 150px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+}
+
+/* Welcome menu section ends */
