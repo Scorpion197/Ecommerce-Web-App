@@ -252,6 +252,11 @@ nav .nav-login {
     font-size: 22px;
 }
 
+#new-arrivals #arrivals-second {
+
+    margin-top: 150px;
+}
+
 #new-arrivals #arrivals-second .gallery-image {
 
     height: 690px;
@@ -260,10 +265,64 @@ nav .nav-login {
     background-size: cover; 
     background-repeat: no-repeat;
     max-width: 100%;
+    transition: all 0.3s ease-in;
+}
+
+#new-arrivals #arrivals-second .gallery-image:hover {
+
+    transform: scale(0.99);
+
 }
 
 #new-arrivals #arrivals-second #second-gallery-item {
 
     background-image: url("../images/gallery2.jpg");
 }
+
+#new-arrivals #third-gallery-item {
+
+    background-image: url("../images/gallery3.jpg");
+    height:  330px;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in;
+
+}
+
+#new-arrivals #fourth-gallery-item {
+
+    background-image: url("../images/gallery4.jpg");
+    height: 330px;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    transition: all 0.3s ease-in;
+
+} 
+
+#new-arrivals #third-gallery-item:hover {
+
+    transform: scale(0.99);
+}
+
+#new-arrivals #fourth-gallery-item:hover {
+
+    transform: scale(0.99);
+}
+
+
 /* New arrivals section ends */
+
+
+
+
+/* Popular items section starts */
+
+
+
+
+/* Popular items section ends */
