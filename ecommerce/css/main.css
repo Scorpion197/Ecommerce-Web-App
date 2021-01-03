@@ -341,4 +341,33 @@ nav .nav-login {
     margin-top: 15px;
     
 }
+
+#popular-items .row {
+
+    padding-top: 30px;
+}
+
+#popular-items .row .card {
+
+    border: none; 
+    outline: none;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+
+}
+
+#popular-items .row .card .card-title {
+
+    font-weight: bolder !important;
+    font-size: 25px;
+    color: #0a0a20;
+}
+
+#popular-items .row .card .card-text {
+
+    color: #0a0a20;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+
+}
 /* Popular items section ends */
