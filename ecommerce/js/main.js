@@ -4,15 +4,24 @@ var images = document.querySelectorAll("#popular-items .row .card img ");
 
 for (var i = 0 ; i < images.length; i++) {
 
-    images[i].addEventListener("mouseover", function() {
+    images[i].addEventListener("mouseover", function () {
 
-        var captions = document.querySelectorAll("#popular-items .row .card .image-caption"); 
+        'use strict';
+        this.style.border = "none";
 
-        
-
-        /*this.style.border = "none"; 
-        this.style.outline = "none";*/
     })
 }
 
+
+// Set actions when we remove the cursor over the image 
+
+for (var i = 0; i < images.length; i++) {
+
+    images[i].addEventListener("mouseleave", function () {
+
+        'use strict';
+        this.style.borderBottom = "3px solid red";
+
+    });
+}
 
