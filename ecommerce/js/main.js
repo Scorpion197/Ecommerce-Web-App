@@ -1,21 +1,36 @@
 var images = document.querySelectorAll("#popular-items .row .card img ");
 
-// Display the "Add to cart caption" on hover 
 
-for (var i = 0 ; i < images.length; i++) {
+// Display the "Add to cart caption" on hover 
+for (let i = 0 ; i < images.length; i++) {
 
     images[i].addEventListener("mouseover", function () {
 
         'use strict';
         this.style.border = "none";
 
-    })
+        var sibling = this.nextSibling; 
+        var notFound = true;
+
+        while (notFound) {
+
+            if (sibling.nodeType != Node.TEXT_NODE ) 
+
+                notFound = false;
+
+            else 
+
+            sibling = sibling.nextSibling;
+        }
+
+        
+    });
 }
 
 
 // Set actions when we remove the cursor over the image 
 
-for (var i = 0; i < images.length; i++) {
+for (let i = 0; i < images.length; i++) {
 
     images[i].addEventListener("mouseleave", function () {
 
