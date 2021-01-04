@@ -23,7 +23,9 @@ for (let i = 0 ; i < images.length; i++) {
             sibling = sibling.nextSibling;
         }
 
-        
+        if (sibling.classList.contains("image-caption")) 
+
+            sibling.style.visibility = "visible";
     });
 }
 
@@ -36,6 +38,24 @@ for (let i = 0; i < images.length; i++) {
 
         'use strict';
         this.style.borderBottom = "3px solid red";
+
+        var sibling = this.nextSibling; 
+        var notFound = true;
+
+        while (notFound) {
+
+            if (sibling.nodeType != Node.TEXT_NODE ) 
+
+                notFound = false;
+
+            else 
+
+            sibling = sibling.nextSibling;
+        }
+
+        if (sibling.classList.contains("image-caption")) 
+
+            sibling.style.visibility = "hidden";
 
     });
 }

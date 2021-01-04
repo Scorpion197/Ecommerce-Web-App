@@ -359,19 +359,18 @@ nav .nav-login {
 #popular-items .row .card .image-caption {
 
     position: absolute;
-    top: 70%;
+    top: 65%;
     background: red;
     height: 50px;
     width: 100%;
-    display: none;
-    transition: all 2s ease-in-out;
-
+    transition: all 1s ease-in-out;
+    visibility: hidden;
+    cursor: pointer;
 }
 
 #popular-items .row .card img {
 
     border-bottom: 3px solid red;
-    transition: all 2s ease-in-out;
 }
 #popular-items .row .card .image-caption p {
 
