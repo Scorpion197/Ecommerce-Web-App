@@ -395,4 +395,18 @@ nav .nav-login {
     font-weight: 600 !important;
 
 }
+
+#popular-items .more-products-btn button {
+
+    text-transform: uppercase;
+    padding: 10px 15px;
+    width: 250px;
+    border: none; 
+    outline: none;
+    color: #fff; 
+    background-color: red;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 80px;
+}
 /* Popular items section ends */

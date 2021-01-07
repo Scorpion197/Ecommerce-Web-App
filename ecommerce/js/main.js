@@ -1,5 +1,4 @@
-var images = document.querySelectorAll("#popular-items .row .card img ");
-
+var images = document.querySelectorAll("#popular-items .row .card img");
 
 // Display the "Add to cart caption" on hover 
 for (let i = 0 ; i < images.length; i++) {
