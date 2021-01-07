@@ -410,3 +410,24 @@ nav .nav-login {
     margin-top: 80px;
 }
 /* Popular items section ends */
+
+
+
+/* Separator styling starts */
+
+#separator .container-fluid {
+
+    height: 200px; 
+    background-image: url("../images/middleback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 150px;
+    max-height: 100%;
+    max-width: 100%;
+    height: 50vh;
+}
+
+/* Separator styling starts */
+
+
