@@ -363,7 +363,7 @@ nav .nav-login {
     background: red;
     height: 50px;
     width: 100%;
-    transition: all 1s ease-in-out;
+    transition: all 3s ease-in-out;
     visibility: hidden;
     cursor: pointer;
 }
@@ -372,6 +372,7 @@ nav .nav-login {
 
     border-bottom: 3px solid red;
 }
+
 #popular-items .row .card .image-caption p {
 
     color: #fff;
