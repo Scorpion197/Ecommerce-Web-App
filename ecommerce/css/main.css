@@ -484,10 +484,6 @@ nav .nav-login {
     margin-top: 100px;  
 }
 
-#choice-section .text  {
-
-    margin-left: 250px;
-}
 
 #choice-section .text h2 {
 
@@ -516,14 +512,20 @@ nav .nav-login {
     padding: 10px 10px;
 }
 
-#choice-section #second-choice-row {
+#choice-section #left-text h2 {
 
-    margin-top: 90px;
+    margin-left: 20px;
 }
 
-#choice-section #second-choice-row .text {
+#choice-section #left-text p {
 
-    
-
+    margin-left: 20px;
 }
+
+#choice-section #left-text button {
+
+    margin-left: 20px;
+}
+
+
 /* Choice section ends */
