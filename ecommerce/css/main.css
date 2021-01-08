@@ -529,3 +529,34 @@ nav .nav-login {
 
 
 /* Choice section ends */
+
+
+
+/*Payement section starts */
+#payement {
+
+    margin-top: 150px;
+}
+#payement .column {
+
+    background: red;
+    color: #fff;
+    padding: 30px 0px 15px 30px;
+
+}
+
+#payement .column h3 {
+
+    font-weight: 400 !important;
+    margin-top: 30px;
+}
+
+#payement .column p {
+
+    font-size: 18px;
+    font-weight: 400 !important;
+    color: rgb(173, 173, 173); 
+    margin-top: 10px;
+}
+
+/*Payement section ends */
