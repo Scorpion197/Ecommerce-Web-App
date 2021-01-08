@@ -10,6 +10,21 @@ body {
 }
 
 
+/* Scroll button */ 
+.scroll {
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 4px;
+    position: fixed;
+    top: 80%;
+    left: 96%;
+    cursor: pointer;
+    z-index: 1;
+}
 /* Navigation bar styling starts */ 
 
 nav .collapse ul {
@@ -541,7 +556,7 @@ nav .nav-login {
 
     background: red;
     color: #fff;
-    padding: 30px 0px 15px 30px;
+    padding: 30px 0px 10px 30px;
 
 }
 

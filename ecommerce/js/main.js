@@ -1,4 +1,5 @@
 var images = document.querySelectorAll("#popular-items .row .card img");
+    scrollButton = document.getElementsByClassName("no-scroll");
 
 // Display the "Add to cart caption" on hover 
 for (let i = 0 ; i < images.length; i++) {
@@ -59,3 +60,37 @@ for (let i = 0; i < images.length; i++) {
     });
 }
 
+// display the scroll-up button while scrolling
+document.addEventListener("scroll", function() {
+
+    'use strict'; 
+
+    if (window.scrollY > 200) {
+
+        scrollButton[0].classList.add("scroll");
+    }
+
+    else {
+
+        scrollButton[0].classList.remove("scroll");
+    }
+    
+});
+
+// Go to top after clicking the button 
+scrollButton[0].addEventListener("click", function() {
+
+    'use strict'; 
+    var coordY = window.scrollY;
+    setInterval(function() {
+
+        if (coordY > 0) {
+
+        coordY = coordY - 10; 
+        window.scrollTo(0, coordY);
+        
+        }
+
+    }, 10);
+
+})
