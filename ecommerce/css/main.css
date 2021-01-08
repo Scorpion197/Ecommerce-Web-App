@@ -348,7 +348,7 @@ nav .nav-login {
 
 
 /* Popular items section starts */
-/**/
+
 #popular-items {
 
     padding-top: 200px;
@@ -436,6 +436,24 @@ nav .nav-login {
     font-weight: 600;
     margin-top: 80px;
 }
+
+@media(max-width: 576px) {
+
+    #popular-items .row .card .image-caption {
+
+        top: 75%;
+    }
+}
+
+@media(max-width: 768px) {
+
+    #popular-items .row .card .image-caption {
+
+        top: 75%;
+    }
+
+}
+
 /* Popular items section ends */
 
 
@@ -458,3 +476,54 @@ nav .nav-login {
 /* Separator styling starts */
 
 
+/* Choice section starts */
+
+#choice-section {
+
+    padding: 50px;
+    margin-top: 100px;  
+}
+
+#choice-section .text  {
+
+    margin-left: 250px;
+}
+
+#choice-section .text h2 {
+
+    margin-top: 20%;
+    font-size: 45px !important;
+    font-weight: bold !important;
+}
+
+#choice-section .text p {
+
+    margin-top: 25px; 
+    font-size: 18px;
+    color: rgb(156, 152, 152);
+    width: 100%;
+}
+
+#choice-section .text button {
+
+    margin-top: 25px;
+    border: none; 
+    outline: none;
+    color: #fff; 
+    text-transform: uppercase;
+    background: red;
+    width: 200px; 
+    padding: 10px 10px;
+}
+
+#choice-section #second-choice-row {
+
+    margin-top: 90px;
+}
+
+#choice-section #second-choice-row .text {
+
+    
+
+}
+/* Choice section ends */
