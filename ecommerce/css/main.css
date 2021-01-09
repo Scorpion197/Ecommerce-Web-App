@@ -10,6 +10,21 @@ body {
 }
 
 
+/* Scroll button */ 
+.scroll {
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 4px;
+    position: fixed;
+    top: 80%;
+    left: 96%;
+    cursor: pointer;
+    z-index: 1;
+}
 /* Navigation bar styling starts */ 
 
 nav .collapse ul {
@@ -315,12 +330,39 @@ nav .nav-login {
 }
 
 
+@media (max-width: 576px) {
+
+    #new-arrivals h2 {
+
+        font-size: 35px;
+        margin-left: 25%;
+    }
+
+    #new-arrivals .row .card {
+
+        width: 70vh;
+        margin: auto;
+        height: auto;
+        margin-top: 20px; 
+        margin-bottom: 20px;
+    }
+
+    #new-arrivals .row .card .card-body h6 {
+
+        font-size: 20px !important;
+    }
+
+    #new-arrivals .row .card .card-body h4 {
+
+        font-size: 19px !important;
+    }
+
+}
 /* New arrivals section ends */
 
 
 
 /* Popular items section starts */
-
 
 #popular-items {
 
@@ -341,4 +383,195 @@ nav .nav-login {
     margin-top: 15px;
     
 }
+
+#popular-items .row {
+
+    padding-top: 30px;
+}
+
+#popular-items .row .card {
+
+    border: none; 
+    outline: none;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+
+}
+
+#popular-items .row .card .image-caption {
+
+    position: absolute;
+    top: 65%;
+    background: red;
+    height: 50px;
+    width: 100%;
+    transition: all 3s ease-in-out;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#popular-items .row .card img {
+
+    border-bottom: 3px solid red;
+}
+
+#popular-items .row .card .image-caption p {
+
+    color: #fff;
+}
+#popular-items .row .card .card-title {
+
+    font-weight: bolder !important;
+    font-size: 25px;
+    color: #0a0a20;
+}
+
+#popular-items .row .card .card-body {
+
+    margin-top: 15px;
+}
+#popular-items .row .card .card-text {
+
+    color: #0a0a20;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+
+}
+
+#popular-items .more-products-btn button {
+
+    text-transform: uppercase;
+    padding: 10px 15px;
+    width: 250px;
+    border: none; 
+    outline: none;
+    color: #fff; 
+    background-color: red;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+
+@media(max-width: 576px) {
+
+    #popular-items .row .card .image-caption {
+
+        top: 75%;
+    }
+}
+
+@media(max-width: 768px) {
+
+    #popular-items .row .card .image-caption {
+
+        top: 75%;
+    }
+
+}
+
 /* Popular items section ends */
+
+
+
+/* Separator styling starts */
+
+#separator .container-fluid {
+
+    height: 200px; 
+    background-image: url("../images/middleback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 150px;
+    max-height: 100%;
+    max-width: 100%;
+    height: 50vh;
+}
+
+/* Separator styling starts */
+
+
+/* Choice section starts */
+
+#choice-section {
+
+    padding: 50px;
+    margin-top: 100px;  
+}
+
+
+#choice-section .text h2 {
+
+    margin-top: 20%;
+    font-size: 45px !important;
+    font-weight: bold !important;
+}
+
+#choice-section .text p {
+
+    margin-top: 25px; 
+    font-size: 18px;
+    color: rgb(156, 152, 152);
+    width: 100%;
+}
+
+#choice-section .text button {
+
+    margin-top: 25px;
+    border: none; 
+    outline: none;
+    color: #fff; 
+    text-transform: uppercase;
+    background: red;
+    width: 200px; 
+    padding: 10px 10px;
+}
+
+#choice-section #left-text h2 {
+
+    margin-left: 20px;
+}
+
+#choice-section #left-text p {
+
+    margin-left: 20px;
+}
+
+#choice-section #left-text button {
+
+    margin-left: 20px;
+}
+
+
+/* Choice section ends */
+
+
+
+/*Payement section starts */
+#payement {
+
+    margin-top: 150px;
+}
+#payement .column {
+
+    background: red;
+    color: #fff;
+    padding: 30px 0px 10px 30px;
+
+}
+
+#payement .column h3 {
+
+    font-weight: 400 !important;
+    margin-top: 30px;
+}
+
+#payement .column p {
+
+    font-size: 18px;
+    font-weight: 400 !important;
+    color: rgb(173, 173, 173); 
+    margin-top: 10px;
+}
+
+/*Payement section ends */

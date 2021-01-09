@@ -1,49 +1,96 @@
-var searchIcon = document.getElementById("search-button");
-    searchInput = document.getElementById("search-field");
-    closeSearchInput = document.getElementById("close-search-input");
-    overlay = document.getElementById("overlay");
+var images = document.querySelectorAll("#popular-items .row .card img");
+    scrollButton = document.getElementsByClassName("no-scroll");
 
-searchIcon.onclick = function () {
+// Display the "Add to cart caption" on hover 
+for (let i = 0 ; i < images.length; i++) {
+
+    images[i].addEventListener("mouseover", function () {
+
+        'use strict';
+        this.style.border = "none";
+
+        var sibling = this.nextSibling; 
+        var notFound = true;
+
+        while (notFound) {
+
+            if (sibling.nodeType != Node.TEXT_NODE ) 
+
+                notFound = false;
+
+            else 
+
+            sibling = sibling.nextSibling;
+        }
+
+        if (sibling.classList.contains("image-caption")) 
+
+            sibling.style.visibility = "visible";
+    });
+}
+
+
+// Set actions when we remove the cursor over the image 
+
+for (let i = 0; i < images.length; i++) {
+
+    images[i].addEventListener("mouseleave", function () {
+
+        'use strict';
+        this.style.borderBottom = "3px solid red";
+
+        var sibling = this.nextSibling; 
+        var notFound = true;
+
+        while (notFound) {
+
+            if (sibling.nodeType != Node.TEXT_NODE ) 
+
+                notFound = false;
+
+            else 
+
+            sibling = sibling.nextSibling;
+        }
+
+        if (sibling.classList.contains("image-caption")) 
+
+            sibling.style.visibility = "hidden";
+
+    });
+}
+
+// display the scroll-up button while scrolling
+document.addEventListener("scroll", function() {
 
     'use strict'; 
-    var omitDisplayElements = document.getElementsByClassName("display"); 
 
-    for (let i = 0 ; i < omitDisplayElements.length; i++) {
+    if (window.scrollY > 200) {
 
-        omitDisplayElements[i].style.display = "none";
+        scrollButton[0].classList.add("scroll");
     }
 
-    overlay.style.backgroundColor = "#fff";
-    overlay.style.height = "150px";
-    document.getElementById("nav-bar").style.marginTop = "-100px";
+    else {
 
-    let searchKeywords = document.getElementById("search-keywords");
-    searchKeywords.style.display = "block";
-    searchInput.style.display = "block";
-    closeSearchInput.style.display = "block";
-
-};
-
-
-closeSearchInput.onclick = function() {
-
-    'use strict';
-
-    var omittedDisplay = document.getElementsByClassName("display");K
-
-    let searchKeywords = document.getElementById("search-keywords");
-    searchKeywords.style.display = "none"; 
-    searchInput.style.display = "none"; 
-    closeSearchInput.style.display = "none";
-    overlay.style.display = "none";
-
-    for (var i = 0; i < omittedDisplay.length; i++) {
-
-        omittedDisplay[i].classList.remove("display");
+        scrollButton[0].classList.remove("scroll");
     }
+    
+});
 
-};
+// Go to top after clicking the button 
+scrollButton[0].addEventListener("click", function() {
 
+    'use strict'; 
+    var coordY = window.scrollY;
+    setInterval(function() {
 
+        if (coordY > 0) {
 
+        coordY = coordY - 10; 
+        window.scrollTo(0, coordY);
+        
+        }
 
+    }, 10);
+
+})
