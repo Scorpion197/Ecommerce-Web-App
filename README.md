@@ -1,2 +1,2 @@
 # About 
-This project is made for learning purposes. Its a full-stack E-commerce wep application made with html5, css3, Bootstrap4, javascript and Django 3.
+This project is made for learning purposes. It's a full-stack E-commerce web application made with HTML5, CSS3, Bootstrap4, Javascript and Django3.
