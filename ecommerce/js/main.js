@@ -82,6 +82,7 @@ scrollButton[0].addEventListener("click", function() {
 
     'use strict'; 
     var coordY = window.scrollY;
+    
     setInterval(function() {
 
         if (coordY > 0) {
