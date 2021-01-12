@@ -3,6 +3,14 @@ This project is made for learning purposes. It's a full-stack E-commerce web app
 
 # Setting up PostgreSQL database
 
-The article below explains how to setup PostgreSQL along with Django.
+## Installation 
 
-[How to use PostreSQL with django](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04)
+If you're a linux user like me then the article below will walk you through the installation. 
+
+[How to install PostgreSQL on ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart)
+
+## Setting up PostgreSQL with Django
+
+The article below explains how to use PostgreSQL along with Django.
+
+[How to use PostgreSQL with django](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04)
