@@ -9,3 +9,7 @@ class Watch(models.Model):
     image = models.ImageField()
 
     
+    def __str__(self):
+
+        return self.watch_name
+
