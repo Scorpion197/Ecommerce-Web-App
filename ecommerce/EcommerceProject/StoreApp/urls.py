@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home_page, name="home_page"),
+    path('store/<int:item_id>', views.view_single_item, name="view_watch"),
 ]
 

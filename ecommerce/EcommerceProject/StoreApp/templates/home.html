@@ -91,48 +91,21 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                {% for item in items %}
+                    <div class="col-lg-4 col-md-6 col-sm-12">
 
-                    <div class="card second-section-card">
-                        <img src="{% static 'images/new_product1.webp' %}" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
+                        <div class="card second-section-card">
+                            <img src="{{ item.image.url }}" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
 
-                            <a href=""><h6 class='category card-text text-center'>Thermo Ball Etip Glove</h6></a>
-                            <h4 class="card-title card-text text-center">$ 455.77 </h4>
+                                <a href="{% url 'view_watch' item.id %}"><h6 class='category card-text text-center'>{{ item.watch_name }}</h6></a>
+                                <h4 class="card-title card-text text-center">$ {{ item.watch_price }} </h4>
 
+                            </div>
                         </div>
+
                     </div>
-
-                </div>
-
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-
-                    <div class="card second-section-card">
-                        <img src="{% static 'images/new_product2.webp' %}" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-
-                            <a href=""><h6 class='category card-text text-center'>Thermo Ball Etip Glove</h6></a>
-                            <h4 class="card-title card-text text-center"> $ 600</h4>
-
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-
-                    <div class="card second-section-card">
-                        <img src="{% static 'images/new_product3.webp' %}" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-
-                            <a href=""><h6 class='category card-text text-center'>Thermo Ball Etip Glove</h6></a>
-                            <h4 class="card-title card-text text-center"> $ 300.20</h4>
-
-                        </div>
-                    </div>
-                    
-                </div>
+                {% endfor %}
 
             </div>
         </div>
