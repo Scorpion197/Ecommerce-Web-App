@@ -82,3 +82,22 @@ section .mosaic {
     text-align: justify;
     color: rgb(151, 149, 149);
 }
+
+#first-section #second-row .item button {
+
+    margin-top: 10vh;
+    border: 1px solid #00a8ff; 
+    outline: none;
+    padding: 20px 20px;
+    color: #00a8ff;
+    background: transparent;
+    width: 170px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+#first-section #second-row .item button:hover {
+
+    color: #fff; 
+    background: #00a8ff;
+}
