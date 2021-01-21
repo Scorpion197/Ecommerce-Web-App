@@ -1,0 +1,84 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+nav .collapse ul {
+
+    padding: 20px 0px 20px 0px;
+}
+
+nav .collapse ul .nav-link {
+    font-size: 18px !important; 
+    font-weight: 800 !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav .nav-search {
+    color: #000;
+    margin-right: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+nav .nav-login {
+    color: #000; 
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 576px )  {
+
+    nav .nav-bar-icons {
+        
+        order: 2 !important;
+    }
+    
+}
+
+section .mosaic {
+
+    height: 40vh;
+    width: 100%; 
+    background-image: url(/static/images/mosaic.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#first-section #second-row .item {
+
+    margin-top: 150px;
+}
+#first-section #second-row .item img {
+
+    width: 50vh;
+    height: 70vh;
+}
+
+#first-section #second-row .item h2 {
+
+    margin-top: 10vh;
+    font-size: 35px !important;
+    font-weight: 600;
+}
+
+#first-section #second-row .item p {
+
+    width: 50%; 
+    margin: auto;
+    font-size: 18px;
+    margin-top: 5vh;
+    text-align: justify;
+    color: rgb(151, 149, 149);
+}
