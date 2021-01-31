@@ -7,6 +7,7 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     transition: all 2s ease-in-out;
+    overflow-x: hidden;
 }
 
 
@@ -52,6 +53,10 @@ nav .nav-login {
 }
 
 
+nav .no-scroll {
+
+    display: none !important;
+}
 @media (max-width: 576px )  {
 
     nav .nav-bar-icons {
@@ -59,6 +64,14 @@ nav .nav-login {
         order: 2 !important;
     }
     
+    nav .scroll {
+        display: none !important; 
+    }
+
+    nav .no-scroll {
+
+        display: none !important;
+    }
 }
 
 /* Navigation bar styling ends */ 

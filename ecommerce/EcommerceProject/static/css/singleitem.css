@@ -45,7 +45,11 @@ nav .nav-login {
     
 }
 
-section .mosaic {
+/* navbar section ends */
+
+
+/* first section starts */
+#first-section .mosaic {
 
     height: 40vh;
     width: 100%; 
@@ -53,8 +57,20 @@ section .mosaic {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
+#first-section .mosaic .mosaic-content h1{
+
+    color: #192a56;
+    font-weight: 600;
+    font-size: 50px;
+
+}
 
 #first-section #second-row .item {
 
@@ -101,3 +117,21 @@ section .mosaic {
     color: #fff; 
     background: #00a8ff;
 }
+
+/* First section styling ends */ 
+
+
+
+/* subscribe section styling starts */ 
+
+#subscribe {
+
+    margin-top: 100px; 
+    padding: 20px;
+    background-color: #191d34;
+
+}
+
+
+
+/* subscribe section styling ends */

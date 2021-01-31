@@ -64,16 +64,16 @@ for (let i = 0; i < images.length; i++) {
 document.addEventListener("scroll", function() {
 
     'use strict'; 
-
+ 
+        
     if (window.scrollY > 200) {
-
+        
         scrollButton[0].classList.add("scroll");
     }
-
     else {
-
         scrollButton[0].classList.remove("scroll");
     }
+    
     
 });
 
