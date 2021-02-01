@@ -140,11 +140,45 @@ nav .nav-login {
 
 #subscribe p {
 
-    color: rgb(221, 226, 226);
+    color: rgb(229, 235, 235);
     font-family: sans-serif !important;
     width: 80%; 
     margin: auto;
     font-size: 16px;
     margin-top: 5px;
+}
+
+#subscribe .column {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#subscribe .input-and-button {
+
+    margin-top: 8vh;
+    font-family: sans-serif !important;
+}
+
+#subscribe .input-and-button button {
+
+    position: absolute; 
+    z-index: 1; 
+    margin-left: -90px;
+    margin-top: 20px;
+}
+
+#subscribe .input-and-button input {
+
+    width: 50vh;
+    padding: 19px 30px;
+    border-radius: 50px;
+    outline: none; 
+    color: #fff; 
+    border: 1px solid #fff;
+    background: transparent;
 }
 /* subscribe section styling ends */
