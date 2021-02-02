@@ -159,7 +159,7 @@ nav .nav-login {
 
 #subscribe .input-and-button {
 
-    margin-top: 8vh;
+    margin-top: 7vh;
     font-family: sans-serif !important;
 }
 
@@ -167,8 +167,16 @@ nav .nav-login {
 
     position: absolute; 
     z-index: 1; 
-    margin-left: -90px;
-    margin-top: 20px;
+    margin-left: -130px;
+    margin-top: 8px;
+    color: #fff;
+    background: #2577fd;
+    outline: none; 
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    width: 13vh;
+    height: 5vh;
 }
 
 #subscribe .input-and-button input {
@@ -181,4 +189,5 @@ nav .nav-login {
     border: 1px solid #fff;
     background: transparent;
 }
+
 /* subscribe section styling ends */

@@ -113,11 +113,12 @@
                     <p class="text-center">Seamlessly empower fully researched growth strategies 
                         and interoperable internal or “organic” sources credibly innovate granular internal .</p>
 
-                    <div class="input-and-button">
-
-                        <input type="email" placeholder="Enter your email"><span><button type="submit">subscribe</button></span>
+                    <form action="{% url '' %}" method="POST" class="input-and-button">
                         
-                    </div>
+                        {% csrf_token %}
+                        <input name = "user-email" type="email" placeholder="Enter your email"><span><button name="submit-button" type="submit">subscribe</button></span>
+                        
+                    </form>
                 </div>
             </div>
 

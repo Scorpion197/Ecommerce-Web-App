@@ -32,3 +32,7 @@ def view_single_item(request, item_id):
 
     return render(request, "singleitem.html", context)
 
+
+def subscribe(request):
+
+    pass 
