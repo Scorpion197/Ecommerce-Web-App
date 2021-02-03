@@ -35,4 +35,8 @@ def view_single_item(request, item_id):
 
 def subscribe(request):
 
-    pass 
+    if (request.method == "POST"):
+
+        email = request.POST['user-email']
+
+        
